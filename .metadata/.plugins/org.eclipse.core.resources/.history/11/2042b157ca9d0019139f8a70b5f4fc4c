@@ -1,0 +1,5 @@
+package br.com.comentarios.models;
+
+public class ComentarioModel {
+
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Comentarios Existentes.</h1>
+    
+    <div>
+        <div th:each="comentario : ${comentarios}">
+
+            <h3>
+                <p th:text="${comentario.nome}">a</p>
+            </h3>
+            <h3>
+                <p th:text="${comentario.comentario}"></p>
+            </h3>
+
+        </div>
+        <button> <a href="/novosComentarios"> Comentar </a></button>
+        
+    </div>
+
+
+</body>
+</html>

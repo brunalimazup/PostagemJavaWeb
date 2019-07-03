@@ -1,0 +1,5 @@
+package br.com.comentarios.services;
+
+public class ComentarioService {
+
+}

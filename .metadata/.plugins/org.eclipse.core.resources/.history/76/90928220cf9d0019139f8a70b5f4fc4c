@@ -1,0 +1,20 @@
+package br.com.comentarios.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import br.com.comentarios.models.ComentarioModel;
+
+@Service
+public class ComentarioService {
+
+	private List<ComentarioModel> comentarios = new ArrayList<ComentarioModel>(); {
+		
+	}
+	public List<ComentarioModel> mostrarComentario(){
+		return this.comentarios;
+	}
+	
+}
